@@ -5,62 +5,198 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Academy Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="./assets/favicon/favicon.ico">
   <link rel="stylesheet" href="style/layout.css">
 </head>
 <body>
   <div class="container wrapper">
-    
-    <div class="dashboard__logo dashboard__left-side">
-      <img src="assets/logo/logo.png" alt="">
-      <span>Academy</span>
-      <div>
-        <i class="fa-solid fa-envelope-open"></i>
-        <p>Dashboard</p>
+
+    <!-- --------------------------------Left side ---------------------------------------- -->
+    <!-- ---------------------------------------------------------------------------------- -->
+    <div class="dashboard__left-side">
+      <div class="left-side__logo">
+        <img src="assets/logo/logo.png" alt="">
+        <H3>Academy</H3>
       </div>
-      <div>
-        <i class="fa-solid fa-briefcase"></i>
-        <p>Courses</p>
+      <div class="left-side__navbar">
+        <ul class="navbar__items">
+          <li class="">
+            <a href="">
+              <div class="navbar__item">
+                <i class="fa-solid fa-envelope-open"></i>
+                Dashboard
+              </div>  
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <div class="navbar__item">
+                <i class="fa-solid fa-briefcase"></i>
+                Courses
+              </div>              
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <div class="navbar__item">                
+                <i class="fa-solid fa-comment"></i>
+                Chats
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <div class="navbar__item">
+                <i class="fa-solid fa-chart-column"></i>
+                Grades
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <div class="navbar__item">
+                <i class="fa-solid fa-calendar-days"></i>
+                Schedule
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <div class="navbar__item">
+                <i class="fa-solid fa-gear"></i>
+                Setting
+              </div>
+            </a>
+          </li>
+        </ul>
       </div>
-      <div>
-        <i class="fa-solid fa-comment"></i>
-        <p>Chats</p>
-      </div>
-      <div>
-        <i class="fa-solid fa-chart-column"></i>
-        <p>Grades</p>
-      </div>
-      <div>
-        <i class="fa-solid fa-calendar-days"></i>
-        <p>Schedule</p>
-      </div>
-      <div>
-        <i class="fa-solid fa-gear"></i>
-        <p>Setting</p>
-      </div>
-      <div class="dash__left--subscription">
-        <img src="" alt="">
+      <div class="left-side__subs">
+        <div class="left-side__subs--text">
+          <h3>Premium subscription</h3>
+          <p>Buy Premium and get access to new courses</p>
+          <button>More detail</button>
+        </div>
+        <img src="assets/images/1- navbar/Career-Learning-Recommendations-S-3.png" alt="study">
 
       </div>
     </div>
-    
-    
+
+
+    <!-- --------------------------------------------------------------------------- -->
+    <!-- ------------------------------- Main -------------------------------------- -->
+
     <div class="dashboard__main">
-      <h1>Dashboard</h1>
-      <form action="">
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <input type="text" placeholder="Search"> 
-      </form>
-      <button>
-        <i class="fa-solid fa-magnifying-glass"></i>
-      </button>
+      <div>
+        <h1>Dashboard</h1>
+        <form action="">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search"> 
+        </form>
+        <button>
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+      <div>
+        <h2>New Courses</h2>
+        <div class="dash__main--Courses">
+          <img src="" alt="">
+          <h3></h3>
+          <p></p>
+          <div class="dash__main--avatars">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <button><i class="fa-solid fa-angle-right"></i></button>
+          </div>
+        </div>
+        <div class="dash__main--Courses">
+          <img src="" alt="">
+          <h3></h3>
+          <p></p>
+          <div class="dash__main--avatars">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <button><i class="fa-solid fa-angle-right"></i></button>
+          </div>
+        </div>
+        <div class="dash__main--Courses">
+          <img src="" alt="">
+          <h3></h3>
+          <p></p>
+          <div class="dash__main--avatars">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <button><i class="fa-solid fa-angle-right"></i></button>
+          </div>
+        </div>
+        <div class="dash__main--myCourses">
+          <div class="mycourses__header">
+            <h2>My courses</h2>
+            <div>
+            <a href="#"> View All</a>
+            </div>
+          </div>
+          <div class="mycourse__table">
+
+          </div>
+        </div>
+      </div>
     </div>
     
-    
+
+    <!-- ---------------------------------- Right side ------------------------------------- -->
+    <!-- ----------------------------------------------------------------------------------- -->
+
     <div class="dashboard__right-side">
-      <h2>Profile</h2>
-      <button>
-        <i class="fa-solid fa-user-pen"></i>
-      </button>
+      <div class="righ-side__header">
+        <h2>Profile</h2>
+        <button>
+          <i class="fa-solid fa-user-pen"></i>
+        </button>
+      </div>
+      <div class="right-side__account">
+        <img src="" alt="">
+        <div>
+          <h4>Esther Howard</h4>
+          <div><i class="fa-solid fa-check"></i></div>
+        </div>
+        <p>Elementry</p>
+      </div>
+      <div class="right-side__calendar">
+
+      </div>
+      <div class="right-side__homework">
+        <h2>Homework Progress</h2>
+        <div class="right-side__homework--progress">
+          <div>
+            <div class="circle"></div>
+            <div>              
+              <h4>Styling with CSS</h4>
+              <p>12 tasks</p>
+            </div>
+            <a href=""><i class="fa-solid fa-angle-right"></i></a>
+          </div>
+          <div>
+            <div class="circle"></div>
+            <div>              
+              <h4>Basics of Programming</h4>
+              <p>18 tasks</p>
+            </div>
+            <a href=""><i class="fa-solid fa-angle-right"></i></a>
+          </div>
+          <div>
+            <div class="circle"></div>
+            <div>              
+              <h4>Learning Java Language</h4>
+              <p>10 tasks</p>
+            </div>
+            <a href=""><i class="fa-solid fa-angle-right"></i></a>
+          </div>
+        </div>
+      </div>
     </div>
     
   </div>
