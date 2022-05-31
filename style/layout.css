@@ -53,15 +53,16 @@ h1, h2, h3, h4, h5, h6 {
 p {
   color: #bfbfbf
 }
+
 .container {
   margin: 0 auto;
-  padding: 0 2rem 2rem 2rem;
+  padding: 2rem 4rem;
 }
 
 .wrapper {
   display: grid;
-  grid-template-columns: 20% auto 30%;
-  column-gap: 2rem;
+  grid-template-columns: 18% auto 25%;
+  column-gap: 3rem;
 }
 
 .btn {
@@ -76,7 +77,7 @@ p {
 
 /* ======================= Left side ================================================== */
 .dashboard__left-side {
-  padding: 1rem;
+  
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -85,7 +86,7 @@ p {
 .left-side__logo {
   font-weight: bold;
   font-size: 1.5rem;
-  height: 10rem;
+  height: 7rem;
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -181,14 +182,14 @@ p {
 /* ============================= Main ================================ */
 
 .dashboard__main {
-  padding: 1rem;
+  
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
 .main__header {
-  height: 10rem;
+  height: 7rem;
 
   display: flex;
   flex-direction: row;
@@ -210,7 +211,7 @@ p {
 }
 
 .main__new-course {
-  height: 35vh;
+  height: 37vh;
   border-radius: 1.5rem;
   padding: 1.5rem;
 
@@ -314,19 +315,10 @@ p {
   width: 100%;
   border: none;
   font-size: 1.5rem;
-  
-  /* display: grid;
-  grid-template-columns: 4fr 1fr 1fr 2fr;
-  grid-template-rows: 1fr repeat(5, 2fr);
-  row-gap: 2rem; */
+  font-weight: bold;
 }
 
-/* .mycourse__table--header {
-  grid-row: 1/5;
-  grid-column: 1/2;
-} */
 .mycourse__table th {
-  height: 2rem;
   text-align: left;
   color: #999;
 }
@@ -338,29 +330,50 @@ p {
   -webkit-transition: all 0.3s ease;
 }
 
-.mycourse__table tr:hover {
+.mycourse__table--course:hover {
   background: rgb(240, 240, 240);
 }
 
-.mycourse__course-name{
+.mycourse__course-name {
+  padding-left: 1rem;
   display: flex;
   flex-direction: row;
   gap: 2rem;
   align-items: center;
-  justify-content: left;
+  /* justify-content: left; */
 }
 
-.mycourse__course-name i{
-  
+.mycourse__course-name i {
+  font-size: 2rem;
   width: 5rem;
   height: 5rem;
   border-radius: 1rem;
 
 }
 
-.mycourse__design i{
+.mycourse__design i {
   background: var(--primary-color);
   color: var(--accent-color);
+}
+
+.mycourse__development i {
+  background: #E5F3FE;
+  color: #6099D4;
+}
+
+.mycourse__python i {
+  background: #FFE4FD;
+  color: #E294D9;
+}
+
+.mycourse__html i {
+  background: var(--primary-color);
+  color: var(--accent-color);
+}
+
+.mycourse__js i {
+  background: #FFF0E1;
+  color: #FCAB5E;
 }
 
 .mycourse__course-title {
@@ -373,4 +386,113 @@ p {
 .mycourse__course-title span {
   color: #999;
   font-size: 1.3rem;
+}
+
+
+
+/* ===================================== Right side ============================================================== */
+
+.dashboard__right-side {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.righ-side__header {
+  height: 7rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right-side__account {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.right-side__account img {
+  background: var(--primary-color);
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+
+}
+
+.right-side__account-name {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.right-side__account-name i {
+  background-color: var(--accent-color);
+  color: var(--light-color);
+  font-size: 1rem;
+  text-align: center;
+  padding-top: 2px;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+}
+
+.right-side__calendar {
+  height: 30rem;
+}
+
+.homework__tiltle {
+  height: 5rem;
+}
+
+.right-side__homework--progress {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.progress__box {
+  width: 100%;
+  height: 8rem;
+  background: #fff;
+  border-radius: 2rem;
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+  justify-content: space-between;
+}
+
+.progress__box a{
+  align-self: flex-end;
+}
+
+.progress__box--left {
+  display: flex;
+  flex-direction: row;
+  place-items: center;
+  gap: 1rem;
+}
+
+.progress__circle {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+}
+
+.progress__homework {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.progress__box--right {
+  display: flex;
+  place-items: center;
 }

@@ -94,7 +94,7 @@
             <i class="fa-solid fa-magnifying-glass"></i>
             <input type="text" placeholder="Search"> 
           </form>
-          <button>
+          <button class="btn btn__secondary">
             <i class="fa-solid fa-magnifying-glass"></i>
           </button>
         </div>
@@ -160,9 +160,9 @@
               <th>Course Nname</th>
               <th>Start</th>
               <th>Rate</th>
-              <th>level</th>
+              <th>Level</th>
             </tr>
-            <tr>
+            <tr class="mycourse__table--course">
               <td>
                 <div class="mycourse__course-name mycourse__design">
                   <i class="fa-brands fa-css3"></i>
@@ -181,7 +181,7 @@
               <td> 4.8</td>
               <td>Elementary</td>
             </tr>
-            <tr>
+            <tr class="mycourse__table--course">
               <td>
                 <div class="mycourse__course-name mycourse__development">
                   <i class="fa-solid fa-code"></i>
@@ -199,7 +199,7 @@
               <td>4.4</td>
               <td>Intermediate</td>
             </tr>
-            <tr>
+            <tr class="mycourse__table--course">
               <td>
                 <div class="mycourse__course-name mycourse__python">
                   <i class="fa-brands fa-python"></i>
@@ -217,7 +217,7 @@
               <td>Intermediate</td>
             </tr>
             
-            <tr>
+            <tr class="mycourse__table--course">
               <td>
                 <div class="mycourse__course-name mycourse__html">
                   <i class="fa-brands fa-html5"></i>
@@ -234,7 +234,7 @@
               <td>4.6</td>
               <td>Elemantary</td>
             </tr>
-            <tr>
+            <tr class="mycourse__table--course">
               <td>
                 <div class="mycourse__course-name mycourse__js">
                   <i class="fa-brands fa-js"></i>
@@ -263,15 +263,15 @@
     <div class="dashboard__right-side">
       <div class="righ-side__header">
         <h2>Profile</h2>
-        <button>
+        <button class="btn btn__secondary">
           <i class="fa-solid fa-user-pen"></i>
         </button>
       </div>
       <div class="right-side__account">
-        <img src="" alt="">
-        <div>
+        <img src="assets/Avatars/4. Western Man.png" alt="">
+        <div class="right-side__account-name">
           <h4>Esther Howard</h4>
-          <div><i class="fa-solid fa-check"></i></div>
+          <i class="fa-solid fa-check"></i>
         </div>
         <p>Elementry</p>
       </div>
@@ -279,36 +279,49 @@
 
       </div>
       <div class="right-side__homework">
-        <h2>Homework Progress</h2>
+        <div class="homework__tiltle">
+          <h2>Homework Progress</h2>
+        </div>
         <div class="right-side__homework--progress">
-          <div>
-            <div class="circle"></div>
-            <div>              
-              <h4>Styling with CSS</h4>
-              <p>12 tasks</p>
+          <div class="progress__box">
+            <div class="progress__box--left"> 
+              <div class="progress__circle"></div> 
+              <div class="progress__homework">                        
+                <h4>Styling with CSS</h4>
+                <p>12 tasks</p>
+              </div>
             </div>
-            <a href=""><i class="fa-solid fa-angle-right"></i></a>
+            <div class="progress__box--right">
+              <a href=""><i class="fa-solid fa-angle-right"></i></a>
+            </div>
           </div>
-          <div>
-            <div class="circle"></div>
-            <div>              
-              <h4>Basics of Programming</h4>
-              <p>18 tasks</p>
+          <div class="progress__box">
+            <div class="progress__box--left">
+              <div class="progress__circle"></div>
+              <div class="progress__homework">                          
+                <h4>Basics of Programming</h4>
+                <p>18 tasks</p>
+              </div>
             </div>
-            <a href=""><i class="fa-solid fa-angle-right"></i></a>
+            <div class="progress__box--right">
+              <a href=""><i class="fa-solid fa-angle-right"></i></a>
+            </div>
           </div>
-          <div>
-            <div class="circle"></div>
-            <div>              
-              <h4>Learning Java Language</h4>
-              <p>10 tasks</p>
+          <div class="progress__box">
+            <div class="progress__box--left">
+              <div class="progress__circle"></div>
+              <div class="progress__homework">
+                <h4>Learning Java Language</h4>
+                <p>10 tasks</p>
+              </div>
             </div>
-            <a href=""><i class="fa-solid fa-angle-right"></i></a>
+            <div class="progress__box--right">
+              <a href=""><i class="fa-solid fa-angle-right"></i></a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    
+    </div>  
   </div>
 </body>
 </html>
