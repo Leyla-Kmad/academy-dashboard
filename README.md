@@ -1,4 +1,4 @@
 # academy-dashboard
 Academy Dashboard Poroject - Front-end Mentorship
 
-Live: 
+Live: https://leyla-kmad.github.io/academy-dashboard/
