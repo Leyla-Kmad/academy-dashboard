@@ -43,6 +43,7 @@ ul {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -213,10 +214,17 @@ p {
 
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 1.5rem;
+
 
 }
 
+.new-course__upper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
 .main__new-course img{
   align-self: center;
   max-width: 100%;
@@ -249,4 +257,56 @@ p {
 
 .course-photography img {
   background: #579BE4;
+}
+
+.main__course--avatars {
+  /* align-self: flex-end; */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+  align-items: center;
+}
+
+.main__course--avatars img{
+  max-width: 100%;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+}
+
+.btn__secondary {
+  font-size: 2rem;
+  color: var(--light-color);
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 1rem;
+}
+
+.cousre-geography button {
+  background-color: #FCAB5E;
+}
+
+.course-js button {
+  background: var(--accent-color);
+}
+
+.course-photography button {
+  background: #579BE4;
+}
+
+.mycourses__header {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.mycourses__header a{
+  color: var(--accent-color);
+}
+
+.mycourse__table {
+  width: 100%
 }
