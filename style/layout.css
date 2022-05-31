@@ -340,38 +340,45 @@ p {
   flex-direction: row;
   gap: 2rem;
   align-items: center;
-  /* justify-content: left; */
+ 
 }
 
-.mycourse__course-name i {
+
+
+.course__icon {
   font-size: 2rem;
   width: 5rem;
   height: 5rem;
   border-radius: 1rem;
-
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.mycourse__design i {
+
+
+.mycourse__design {
   background: var(--primary-color);
   color: var(--accent-color);
 }
 
-.mycourse__development i {
+.mycourse__development {
   background: #E5F3FE;
   color: #6099D4;
 }
 
-.mycourse__python i {
+.mycourse__python {
   background: #FFE4FD;
   color: #E294D9;
 }
 
-.mycourse__html i {
+.mycourse__html {
   background: var(--primary-color);
   color: var(--accent-color);
 }
 
-.mycourse__js i {
+.mycourse__js  {
   background: #FFF0E1;
   color: #FCAB5E;
 }
