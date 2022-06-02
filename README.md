@@ -1,4 +1,5 @@
 # academy-dashboard
-Academy Dashboard Poroject - Front-end Mentorship
+Academy Dashboard Project - Front-end Mentorship.
+Using Html, Css.
 
 Live: https://leyla-kmad.github.io/academy-dashboard/
